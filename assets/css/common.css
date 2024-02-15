@@ -30,30 +30,29 @@ body {
     --financial-service-title-font-weight: 700;
     --financial-service-title-line-height: 40px;
 
-    /* --sub-heading-font-size: 18px; */
-    /* --sub-heading-font-weight: 500; */
-    /* --sub-heading-line-height: 26px; */
+    --sub-heading-font-size: 18px;
+    --sub-heading-font-weight: 500;
+    --sub-heading-line-height: 26px;
 
-    /* --global-report-font-size: 72px; */
-    /* --global-report-font-weight: 700; */
-    /* --global-report-line-height: 88px; */
+    --global-report-font-size: 72px;
+    --global-report-font-weight: 700;
+    --global-report-line-height: 88px;
 
-    /* --list-text-font-size: 20px; */
-    /* --list-text-font-weight: 500; */
-    /* --list-text-line-height: 32px; */
+    --list-text-font-size: 20px;
+    --list-text-font-weight: 500;
+    --list-text-line-height: 32px;
 
-    /* --footer-text-font-size: 18px; */
-    /* --footer-text-font-weight: 400px; */
-    /* --footer-text-line-height: 26px; */
+    --footer-text-font-size: 18px;
+    --footer-text-font-weight: 400px;
+    --footer-text-line-height: 26px;
 
     --font-color-light-black: rgba(28, 28, 28, 0.6);
     --font-color-black: #1c1c1c;
     --font-color-red: #F15757;
-    /* --font-color-blue: #2B71FA; */
+    --font-color-blue: #2B71FA;
     --font-weight-500: 500;
     --font-size-24: 24px;
 }
-
 
 
 /* headings */
@@ -74,6 +73,17 @@ body {
     font-weight: var(--heading-font-weight-normal);
     line-height: var(--heading-line-height-sm);
 }
+.statistics-sec-head-text{
+    color: var(--font-color-blue);
+    font-size: var(--global-report-font-size);
+    font-weight: var(--global-report-font-weight);
+    line-height: var(--global-report-line-height);
+}
+.sub-heading {
+    font-size: var(--sub-heading-font-size);
+    font-weight: var(--sub-heading-font-weight);
+    line-height: var(--sub-heading-line-height);
+}
 
 /* description  */
 .description {
@@ -82,8 +92,12 @@ body {
     line-height: var(--description-line-height-nomral);
     font-weight: var(--description-font-weight-normal);
 }
-
-
+.custom-description {
+    color: var(--font-color-light-black);
+    font-size: var(--description-font-size-sm);
+    font-weight: var(--description-font-weight-sm);
+    line-height: var(--description-line-height-sm);
+}
 
 /* span texts  */
 .hero-sec-span1 {
@@ -98,7 +112,6 @@ body {
     line-height: 26px;
     color: var(--font-color-light-black);
 }
-
 
 /* buttons  */
 .button {
@@ -138,9 +151,6 @@ body {
     line-height: var(--description-line-height-sm);
 }
 
-
-
-
 /* colors */
 .color-light-black {
     color: var(--font-color-light-black);
@@ -151,7 +161,9 @@ body {
 .color-red {
     color: var(--font-color-red);
 }
-
+.color-mid-black{
+    color: rgba(28, 28, 28, 0.8);
+ }
 
 /* fonts  */
 .font-weight-500 {
@@ -159,4 +171,35 @@ body {
 }
 .font-size-24 {
     font-size: var(--font-size-24);
+}
+
+/* background  */
+.background-gray{
+    background-color: #EEEEF5;
+    border-radius: 62px;
+}
+.bg-color{
+    background-color: #F6F6F9;
+}
+
+/* list text */
+.list-text{
+    color: var(--font-color-black);
+    font-size: var(--list-text-font-size);
+    font-weight: var(--list-text-font-weight);
+    line-height: var(--list-text-line-height);
+}
+
+/* footer  */
+.footer{
+    background: #F6F6F9;
+    color: var(--font-color-light-black);
+    font-size: var(--footer-text-font-size);
+    font-weight: var(--footer-text-font-weight);
+    line-height: var(--footer-text-line-height);
+}
+
+/* gap  */
+.g-20{
+    gap: 20px;
 }

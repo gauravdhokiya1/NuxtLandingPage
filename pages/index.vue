@@ -167,25 +167,25 @@
                 </div>
             </div>
         </section>
-        <section class="client-review-section">
+        <section class="testimonial-section">
             <div class="container">
                 <div class="row p-61">
-                    <div class="col-md-4 d-flex flex-column gap-20 thought-cards">
-                        <div class="d-flex align-items-center thought-card active background-gray " data-tab="founder">
+                    <div class="col-md-4 d-flex flex-column gap-20 testimonial-cards">
+                        <div class="d-flex align-items-center testimonial-card active background-gray " data-tab="founder">
                             <img src="../assets/images/FOUNDER.svg" alt="FOUNDER">
                             <div class="d-flex flex-column">
                                 <span class="color-black name">Catherine Bennett</span>
                                 <span class="color-light-black role">Founder, Creative</span>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center thought-card" data-tab="designer">
+                        <div class="d-flex align-items-center testimonial-card" data-tab="designer">
                             <img src="../assets/images/DESIGNER.svg" alt="DESIGNER">
                             <div class="d-flex flex-column">
                                 <span class="color-black name">Tony Danza</span>
                                 <span class="color-light-black role">Designer, Creative</span>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center thought-card" data-tab="aigc">
+                        <div class="d-flex align-items-center testimonial-card" data-tab="aigc">
                             <img src="../assets/images/AICG.svg" alt="AICG">
                             <div class="d-flex flex-column">
                                 <span class="color-black name">Mike Torello</span>
@@ -198,21 +198,21 @@
                             <img src="../assets/images/double-inverted-comma-top.svg" class="comma-1">
                             <img src="../assets/images/double-inverted-comma-bottom.svg" class="comma-2">
                         </div>
-                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Initially doubtful, the
+                        <h1 class="heading-sm color-black testimonial-desc heading-mobile-sm">Initially doubtful, the
                             outcome surpassed all my anticipations. The powerful analytics and reporting features
                             offered crucial perspectives on our business metrics, <span class="color-light-black">enabling
                                 us to implement informed</span></h1>
                     </div>
                     <!-- <div class="col-md-8 review" id="designer">
                         <div style="height: 70px;"></div>
-                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Lorem ipsum dolor sit amet
+                        <h1 class="heading-sm color-black testimonial-desc headingsm-sm-scrn">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Debitis recusandae minima quae qui soluta quas voluptatibus,
                             nemo earum temporibus ipsa odit quaerat. Id laboriosam ducimus praesentium magnam? Enim,
                             optio rerum.</h1>
                     </div> -->
                     <!-- <div class="col-md-8 review" id="aigc">
                         <div style="height: 70px;"></div>
-                        <h1 class="heading-sm color-black thought-desc headingsm-sm-scrn">Neque possimus labore repellat
+                        <h1 class="heading-sm color-black testimonial-desc headingsm-sm-scrn">Neque possimus labore repellat
                             maxime quam nulla reiciendis itaque nisi ullam distinctio! Ea dolorum enim eveniet
                             laudantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident corrupti
                             reprehenderit asperiores? Corrupti, cum fugit!</h1>
@@ -220,6 +220,181 @@
                 </div>
             </div>
         </section>
+        <section class="statistics-section">
+            <div class="container">
+                <div class="row p-48 gap-63 gap-66-mob">
+                    <!-- <div class="col-md d-flex flex-column align-items-center p-unset">
+                        <span class="statistics-sec-head-text">300+</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/partner-icon.svg">
+                            <span class="statistics-sec-text">Partner with us</span>
+                        </div>
+                    </div> -->
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center p-unset" 
+                    StatisticCountText="300+"
+                    ImgSource="../assets/images/partner-icon.svg"
+                    StatisticText="Partner with us"
+                    />
+                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="statistics-sec-head-text">$3.2b+</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/money-icon.svg">
+                            <span class="statistics-sec-text">Cumulative trending</span>
+                        </div>
+                    </div> -->
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
+                    StatisticCountText="$3.2b+"
+                    ImgSource="../assets/images/money-icon.svg"
+                    StatisticText="Cumulative trending"
+                    />
+                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="statistics-sec-head-text">860k</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="./images/succes-prj-icon.svg">
+                            <span class="statistics-sec-text">Successful projects</span>
+                        </div>
+                    </div> -->
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
+                    StatisticCountText="860k"
+                    ImgSource="../assets/images/succes-prj-icon.svg"
+                    StatisticText="Successful projects"
+                    />
+                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
+                        <span class="statistics-sec-head-text">1.6%</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="../assets/images/intrest-rate-icon.svg">
+                            <span>Low interest rate</span>
+                        </div>
+                    </div> -->
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
+                    StatisticCountText="1.6%"
+                    ImgSource="../assets/images/intrest-rate-icon.svg"
+                    StatisticText="Low interest rate"
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="xb-innovation-section">
+            <div class="container">
+                <div class="row d-flex align-items-center p-48 pt-27-mob pb-unset-mob">
+                    <div class="col-md">
+                        <img src="../assets/images/xb-inovation.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md xb-inno-sec-content">
+                        <h1 class="heading heading-mobile">Pave your path to triumph with XB innovation.</h1>
+                        <p class="description description-mobile xb-inno-sec-para max-width">X equips you with the
+                            essential tools to craft
+                            a genuinely professional SaaS website.</p>
+                        <div class="d-flex flex-column lists pt-64">
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">Effortless Browsing</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">Secure Top 5% Industry Experts for Your Project</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">Secure Transaction Platform</span>
+                            </div>
+                        </div>
+                        <button class="btn button button-mobile more-about-us-btn">More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-color download-our-app-section">
+            <div class="container">
+                <div class="row p-95">
+                    <div class="col-md-6 d-flex align-items-end iphone-img">
+                        <img src="../assets/images/iphone.svg" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 download-our-app-content">
+                        <h1 class="heading heading-mobile">Download our mobile app</h1>
+                        <p class="description description-mobile pt-32 max-width pt-32-mob">X provides you with the
+                            essential toolkit to develop a
+                            genuinely polished website</p>
+                        <div class="d-flex flex-column pt-32 lists">
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">Effortless Browsing</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">Secure Top 5% Industry Experts for Your Project</span>
+                            </div>
+                            <div class="d-flex g-14">
+                                <img src="../assets/images/right.svg">
+                                <span class="list-text">WeChat & live chat</span>
+                            </div>
+                        </div>
+                        <div class="d-flex g-20 p-imgs pt-34-mob justify-content-center">
+                            <img src="../assets/images/download-on-app-store.svg" class="stores-img">
+                            <img src="../assets/images/download-on-playstore.svg" class="stores-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accelerate-business-growth-section">
+            <div class="d-flex flex-column align-items-center p-abgs">
+                <h1 class="heading heading-mobile">Accelerate Your Business Growth</h1>
+                <p class="custom-description description-mobile accelerate-desc text-center abgs-para">FramerBite
+                    supplies the key
+                    components for assembling a top-tier website tailored to your SaaS needs.</p>
+                <form class="input-field">
+                    <input type="email" placeholder="Enter Your Email" class="form-control input">
+                    <button type="submit" class="btn button email-btn">Email Me</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-start">
+                            <!-- <img src="./images/Logo.svg" class="img-fluid logo"> -->
+                            <a class="footer-logo d-flex align-items-center" href="#">
+                                <img src="../assets/images/logo-icon.svg" alt="Logo">
+                                Logoipsum
+                            </a>
+                            <div class="footer-desc">
+                                <p class="mb-0 description-mobile">XB gives you the blocks</p>
+                                <p class="mb-0 description-mobile">needed to create a truly professional</p>
+                                <p class="mb-0 description-mobile">website for your SaaS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-52-mob">
+                        <span class="color-mid-black">Solutions</span>
+                        <span>Freelancer</span>
+                        <span>Data Analytics</span>
+                        <span>Small Business</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Company</span>
+                        <span>About</span>
+                        <span>Career</span>
+                        <span>Contact</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Resource</span>
+                        <span>Customers</span>
+                        <span>Strategic Finance</span>
+                        <span>Ebooks & Guides</span>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column g-20 pt-46-mob">
+                        <span class="color-mid-black">Features</span>
+                        <span>Freelancer</span>
+                        <span>Data Analytics</span>
+                        <span>Small Business</span>
+                    </div>
+                </div>
+                <p class="color-light-black mt-56 mb-0 copyright-text">Copyright © 2023 All Rights Reserved
+                    by XB</p>
+            </div>
+        </footer>
     </main>
 </template>
 

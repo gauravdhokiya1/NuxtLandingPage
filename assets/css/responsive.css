@@ -25,7 +25,6 @@
     .navbar-nav {
         gap: 40px;
     }
-
     /* navbar end  */
 
     /* hero section start  */
@@ -56,7 +55,6 @@
     .Sucsessed-clients {
         gap: 24px;
     }
-
     /* hero section start  */
 
     /* buisnesses section start */
@@ -78,14 +76,13 @@
         margin-top: 18px;
         margin-bottom: 122px;
     }
-
     /* body.dark-mode .box-shadow{
             background-color: #FFFFFF;
         } */
     /* buisnesses section end */
 
-       /* assisting section start  */
 
+    /* assisting section start  */
     .assisting-section > .container{
         padding-top: 72px;
         padding-left: unset;
@@ -127,7 +124,6 @@
     /* assisting section end  */
 
     /* about section start   */
-    
     .about-us-section{
         margin-top: 68px;
     }
@@ -149,7 +145,7 @@
     /* about section end   */
 
     /* thought section start  */
-    .client-review-section{
+    .testimonial-section{
         margin-top: 50px;
     }
     .p-61{
@@ -165,21 +161,115 @@
         top: 220px;
         right: 14px;
     }
-    .thought-cards{
+    .testimonial-cards{
         gap: 16px;
     }
-    .thought-card{
+    .testimonial-card{
         padding: 12px 33px 12px 14px;
         max-width: 268px;
         gap: 16px;
     }
-    .thought-desc{
+    .testimonial-desc{
         position: relative;
         bottom: 70px;
     }
-    
     /* thought section end  */
     
+    /* statistics section start  */
+    .statistics-section{
+        margin-top: 19px;
+    }
+    .gap-63{
+        gap: 63px;
+    }
+    .statistics-sec-text{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .p-unset{
+        padding: unset;
+    }
+    /* statistics section end  */    
+    
+    /* xb innovation section start  */
+    .xb-innovation-section{
+        margin-top: 85px;
+    }
+    .xb-inno-sec-para{
+        padding-top: 32px;
+    }
+    .pt-64{
+        padding-top: 64px;
+    }
+     .g-14{
+        gap: 14px;
+    }
+    .more-about-us-btn{
+        margin-top: 34px;
+    }
+    /* xb innovation section end  */
+
+    /* download our app section start*/
+    .download-our-app-section{
+        margin-top: 54px;
+    }
+    .p-95{
+        padding-top: 95px;
+    }
+    .pt-32{
+        padding-top: 32px;
+    }
+    .g-20{
+        gap: 20px;
+    }
+    .p-imgs{
+        padding-top: 34px;
+        padding-bottom: 48px;
+    }
+    /* download our app section end */    
+
+    /* accelerate business growth section start  */
+    .accelerate-desc{
+        max-width: 562px;
+    }
+    .accelerate-business-growth-section{
+        margin-top: 56px;    
+    }
+    .p-abgs{
+        padding-top: 39px;
+        padding-bottom: 54px;
+    }
+    .abgs-para{
+        padding-top: 24px;
+        margin-bottom: unset;
+    }
+    .input-field{
+        padding-top: 38px;
+    }
+    .input{
+        padding: 22px 230px 22px 36px;
+        background: linear-gradient(0deg, #BFBFC5, #BFBFC5),linear-gradient(0deg, #F6F6F9, #F6F6F9);
+        border-radius: 52px;
+    }
+    .email-btn{
+        position: relative;
+        bottom: 66px;
+        left: 340px;
+    }
+    /* accelerate business growth section end  */  
+    
+    /* footer start  */
+    .footer > .container{
+        padding: 96px 0px;
+    }
+    .footer-desc{
+        padding-top: 26px;
+    }
+    .mt-56{
+        margin-top: 56px;
+    }
+    /* footer end  */    
 }
 
 
@@ -192,9 +282,9 @@
         --heading-font-weight-normal-sm-scrn: 700;
         --heading-line-height-sm-scrn: 40px;
 
-        /* --custom-heading-font-size-sm-scrn: 20px; */
-        /* --custom-heading-font-weight-sm-scrn: 500; */
-        /* --custom-heading-line-height-sm-scrn: 32px; */
+        --custom-heading-font-size-sm-scrn: 20px;
+        --custom-heading-font-weight-sm-scrn: 500;
+        --custom-heading-line-height-sm-scrn: 32px;
 
         --description-font-size-normal-sm-scrn: 14px;
         --description-font-weight-normal-sm-scrn: 400;
@@ -212,38 +302,28 @@
         --financial-service-title-font-weight-sm-scrn: 700;
         --financial-service-title-line-height-sm-scrn: 32px;
 
-        /* --sub-heading-font-size-sm-scrn: 10px; */
-        /* --sub-heading-font-weight-sm-scrn: 400; */
-        /* --sub-heading-line-height-sm-scrn: 16px; */
+        --sub-heading-font-size-sm-scrn: 10px;
+        --sub-heading-font-weight-sm-scrn: 400;
+        --sub-heading-line-height-sm-scrn: 16px;
 
-        /* --global-report-text-font-size-sm-scrn: 56px; */
-        /* --global-report-text-font-weight-sm-scrn: 700; */
-        /* --global-report-text-line-height-sm-scrn: 62px; */
+        --statistics-sec-text-font-size-sm-scrn: 56px;
+        --statistics-sec-text-font-weight-sm-scrn: 700;
+        --statistics-sec-text-line-height-sm-scrn: 62px;
 
-        /* --list-text-font-size-sm-scrn: 14px; */
-        /* --list-text-font-weight-sm-scrn: 400; */
-        /* --list-text-line-height-sm-scrn: 20px; */
+        --list-text-font-size-sm-scrn: 14px;
+        --list-text-font-weight-sm-scrn: 400;
+        --list-text-line-height-sm-scrn: 20px;
 
         --financial-service-description-font-size : 14px;
         --financial-service-description-line-height: 20px;
         --financial-service-description-font-weight: 400;
 
-        /* --footer-text-font-size: 14px; */
-        /* --footer-text-font-weight: 400px; */
-        /* --footer-text-line-height: 20px; */
+        --footer-text-font-size: 14px !important;
+        --footer-text-font-weight: 400px !important;
+        --footer-text-line-height: 20px !important;
     }
-    .financial-service-title {
-        color: var(--font-color-black);
-        font-size: var(--financial-service-title-font-size-sm-scrn) !important;
-        font-weight: var(--financial-service-title-font-weight-sm-scrn) !important;
-        line-height: var(--financial-service-title-line-height-sm-scrn) !important;
-    }
-    .financial-service-description{
-        color: var(--font-color-light-black);
-        font-size: var(--financial-service-description-font-size) !important;
-        font-weight: var(--financial-service-description-font-weight) !important;
-        line-height: var(--financial-service-description-line-height) !important;
-    }
+
+
 
     /* headings */
     .heading-mobile {
@@ -258,7 +338,12 @@
         font-weight: var(--custom-heading-font-weight-sm-scrn) !important;
         line-height: var(--custom-heading-line-height-sm-scrn) !important;
     }
-
+    .sub-heading{
+        color: var(--font-color-red);
+        font-size: var(--sub-heading-font-size-sm-scrn);
+        font-weight: var(--sub-heading-font-weight-sm-scrn);
+        line-height: var(--sub-heading-line-height-sm-scrn);
+    }
     /* descriptions */
     .description-mobile {
         color: var(--font-color-light-black);
@@ -266,8 +351,6 @@
         font-weight: var(--description-font-weight-normal-sm-scrn) !important;
         line-height: var(--description-line-height-normal-sm-scrn) !important;
     }
-
-
     /* buttons */
     .button-mobile {
         padding: 12px 16px !important;
@@ -275,18 +358,54 @@
         font-weight: 400 !important;
         line-height: 18px;
     }
+    /* title and description  */
+    .financial-service-title {
+        color: var(--font-color-black);
+        font-size: var(--financial-service-title-font-size-sm-scrn) !important;
+        font-weight: var(--financial-service-title-font-weight-sm-scrn) !important;
+        line-height: var(--financial-service-title-line-height-sm-scrn) !important;
+    }
+    .financial-service-description{
+        color: var(--font-color-light-black);
+        font-size: var(--financial-service-description-font-size) !important;
+        font-weight: var(--financial-service-description-font-weight) !important;
+        line-height: var(--financial-service-description-line-height) !important;
+    }
 
+    .statistics-sec-head-text{
+        color: var(--font-color-blue);
+        font-size: var(--statistics-sec-text-font-size-sm-scrn) !important;
+        font-weight: var(--statistics-sec-text-font-weight-sm-scrn) !important;
+        line-height: var(--statistics-sec-text-line-height-sm-scrn) !important;
+    }
+
+    .list-text{
+        color: var(--font-color-black);
+        font-size: var(--list-text-font-size-sm-scrn) !important;
+        font-weight: var(--list-text-font-weight-sm-scrn) !important;
+        line-height: var(--list-text-line-height-sm-scrn) !important;
+    }
+    .footer{
+        font-size: var(--footer-text-font-size) !important;
+        font-weight: var(--footer-text-font-weight) !important;
+        line-height: var(--footer-text-line-height) !important;
+    }
+    .m-top-on-sm{
+        margin-top: 30px;
+    }
+    .p-48{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 
 
     /* navbar start  */
     .navbar {
         padding: 16px;
     }
-
     .navbar-toggler {
         border: unset;
     }
-
     /* navbar end  */
 
     /* hero section start  */
@@ -455,30 +574,30 @@
     /* about us section end  */
 
      /* thoughts section start */
-     .client-review-section{
+    .testimonial-section{
         margin-top: 28px;
     }
-    .thought-card > img{
+    .testimonial-card > img{
         max-width: 32px;
         max-height: 32px;
     }
-    .thought-card div span{
+    .testimonial-card div span{
         font-size: 10px;
         font-weight: 400;
         line-height: 16px;
     } 
-    .thought-cards{
+    .testimonial-cards{
         flex-direction: row !important;
         overflow: scroll;
         gap: 8px;
     }
-    .thought-card{
+    .testimonial-card{
         padding: 6px 16px 6px 6px;
         gap: 8px;
         min-width: 150px;
     }
-    .thought-desc{
-        font-weight: 700;
+    .testimonial-desc{
+        /* font-weight: 700 !important; */
         padding: 36px 26px 35px 26px;
         position: relative;
         bottom: 30px;
@@ -505,4 +624,115 @@
         margin-top: 20px;
     }
     /* thoughts section end */
+
+    /* global report section start  */
+    .statistics-section{
+        margin-top: 30px;
+    }
+    .gap-66-mob{
+        gap: 66px;
+    }
+    .statistics-sec-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    /* global report section end  */    
+
+    /* xb innovation section start  */
+    .pt-27-mob{
+        padding-top: 27px;
+    }
+    .g-14{
+        gap: 14px;
+    }
+    .xb-inno-sec-content{
+        padding: 54px 26px 43px 26px;
+    }
+    .xb-inno-sec-para{
+        margin-top: 22px;
+        max-width: 260px;
+    }
+    .lists{
+        margin-top: 32px;
+    }
+    .more-about-us-btn{
+        margin-top: 32px;
+    }
+    .pb-unset-mob{
+        padding-bottom: unset;
+    }
+    /* xb innovation section end  */
+
+    /* download our app section start  */
+    .iphone-img{
+        padding: 32px 42px 0px 42px;
+    }
+    .stores-img{
+        max-width: 84px;
+        max-height: 27px;
+    }
+    .download-our-app-content{
+        padding: 24px 26px 32px 26px;
+    }
+    .pt-32-mob{
+        padding-top: 32px;
+    }
+    .pt-34-mob{
+        padding-top: 34px;
+    }
+    /* download our app section end  */    
+
+    /* accelerate business growth section start  */
+    .accelerate-business-growth-section{
+        margin-top: 34px;
+    }
+    .accelerate-business-growth-section > div{
+        padding: 43px 26px;
+    }
+    .accelerate-business-growth-section > div > h1{
+        text-align: center;
+    }
+    .abgs-para{
+        margin-top: 10px;
+        max-width: 260px;
+    }
+    .input{
+        margin-top: 48px;
+        /* padding: 13px 10px; */
+        padding: 12px 80px 13px 10px;
+        background: linear-gradient(0deg, #BFBFC5, #BFBFC5),linear-gradient(0deg, #F6F6F9, #F6F6F9);
+        border-radius: 30px;
+    }
+    .email-btn{
+        position: relative;
+        bottom: 48px;
+        left: 184px;
+        padding: 10px 18px !important;
+    }
+    /* accelerate business growth section end  */
+    
+    /* footer start  */
+    .pt-46-mob{
+        padding-top: 46px;
+    }
+    .pt-52-mob{
+        padding-top: 46px;
+    }
+    .footer > .container > .row{
+        padding: 26px;
+    }
+    .footer-desc{
+        margin-top: 26px;
+    }
+    .logo{
+        max-width: 72px;
+        max-height: 18px;
+    }
+    .copyright-text{
+        padding-top: 56px;
+        padding-left: 26px;
+        padding-bottom: 26px !important;
+    }
+    /* footer end */    
 }

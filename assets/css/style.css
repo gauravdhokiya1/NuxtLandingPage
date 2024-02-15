@@ -26,8 +26,13 @@
     background-color: #FFFFFF;
     border-radius: 12px 12px 0px 0px;
 }
-
-
-
-
-
+.lists{
+    gap: 18px;
+}
+.footer-logo{
+    gap: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1c1c1c;
+    text-decoration: none;
+}
