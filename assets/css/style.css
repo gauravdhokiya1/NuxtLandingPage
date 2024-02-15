@@ -1,0 +1,33 @@
+.nav-link {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.nav-btn {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-brand{
+    font-size: 26px;
+    font-weight: 800;
+    gap: 10px;
+}
+.hero-section {
+    background-image: url('../images/hero-section-bg.png');
+}
+.financial-services {
+    background: linear-gradient(155.69deg, #F6F6F9 4.54%, #EEEEF5 98.56%),linear-gradient(0deg, #E1E1E9, #E1E1E9);
+    border-radius: 12px;
+    border: 2px solid #E1E1E9
+}
+.investment-info > div{
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+
+
+

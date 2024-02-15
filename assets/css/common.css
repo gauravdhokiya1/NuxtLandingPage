@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+}
+
+:root {
+    /* var for large screens  */
+
+    --heading-font-size-normal: 56px;
+    --heading-font-weight-normal: 700;
+    --heading-line-height-normal: 62px;
+
+    --cusotm-heading-font-size-sm: 36px;
+    --heading-line-height-sm: 52px;
+
+    --cusotm-heading-font-size-lg: 70px;
+    --heading-line-height-lg: 88px;
+
+    --description-font-size-normal: 24px;
+    --description-font-weight-normal: 400;
+    --description-line-height-nomral: 40px;
+
+    --description-font-size-sm: 20px;
+    --description-font-weight-sm: 400;
+    --description-line-height-sm: 28px;
+
+    --financial-service-title-font-size: 30px;
+    --financial-service-title-font-weight: 700;
+    --financial-service-title-line-height: 40px;
+
+    /* --sub-heading-font-size: 18px; */
+    /* --sub-heading-font-weight: 500; */
+    /* --sub-heading-line-height: 26px; */
+
+    /* --global-report-font-size: 72px; */
+    /* --global-report-font-weight: 700; */
+    /* --global-report-line-height: 88px; */
+
+    /* --list-text-font-size: 20px; */
+    /* --list-text-font-weight: 500; */
+    /* --list-text-line-height: 32px; */
+
+    /* --footer-text-font-size: 18px; */
+    /* --footer-text-font-weight: 400px; */
+    /* --footer-text-line-height: 26px; */
+
+    --font-color-light-black: rgba(28, 28, 28, 0.6);
+    --font-color-black: #1c1c1c;
+    --font-color-red: #F15757;
+    /* --font-color-blue: #2B71FA; */
+    --font-weight-500: 500;
+    --font-size-24: 24px;
+}
+
+
+
+/* headings */
+.heading {
+    color: var(--font-color-black);
+    font-size: var(--heading-font-size-normal);
+    font-weight: var(--heading-font-weight-normal);
+    line-height: var(--heading-line-height-normal);
+}
+.heading-lg {
+    color: var(--font-color-black);
+    font-size: var(--cusotm-heading-font-size-lg);
+    font-weight: var(--heading-font-weight-normal);
+    line-height: var(--heading-line-height-lg);
+}
+.heading-sm {
+    font-size: var(--cusotm-heading-font-size-sm);
+    font-weight: var(--heading-font-weight-normal);
+    line-height: var(--heading-line-height-sm);
+}
+
+/* description  */
+.description {
+    color: var(--font-color-light-black);
+    font-size: var(--description-font-size-normal);
+    line-height: var(--description-line-height-nomral);
+    font-weight: var(--description-font-weight-normal);
+}
+
+
+
+/* span texts  */
+.hero-sec-span1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: var(--font-color-black);
+}
+.hero-sec-span2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--font-color-light-black);
+}
+
+
+/* buttons  */
+.button {
+    color: #ffffff;
+    background-color: #F15757;
+    border: 1px solid #F15757;
+    padding: 18px 28px;
+    border-radius: 32px;
+    font-weight: 500;
+}
+.button:hover {
+    border: 1px solid #F15757;
+}
+.button-custom {
+    color: #F15757;
+    border: 1px solid #F15757;
+    padding: 18px 28px;
+    border-radius: 32px;
+    font-weight: 500;
+}
+.button-custom:hover {
+    color: #ffffff;
+    background-color: #F15757;
+}
+
+/* title and desc  */
+.financial-service-title {
+    color: var(--font-color-black);
+    font-size: var(--financial-service-title-font-size);
+    font-weight: var(--financial-service-title-font-weight);
+    line-height: var(--financial-service-title-line-height);
+}
+.financial-service-description {
+    color: var(--font-color-light-black);
+    font-size: var(--description-font-size-sm);
+    font-weight: var(--description-font-weight-sm);
+    line-height: var(--description-line-height-sm);
+}
+
+
+
+
+/* colors */
+.color-light-black {
+    color: var(--font-color-light-black);
+}
+.color-black {
+    color: var(--font-color-black);
+}
+.color-red {
+    color: var(--font-color-red);
+}
+
+
+/* fonts  */
+.font-weight-500 {
+    font-weight: var(--font-weight-500);
+}
+.font-size-24 {
+    font-size: var(--font-size-24);
+}

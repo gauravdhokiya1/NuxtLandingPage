@@ -1,0 +1,508 @@
+@media screen and (min-width:769px) {
+
+    /* navbar start  */
+    .navbar {
+        /* position: sticky;
+        z-index: 1;
+        top: 0px; */
+        padding: 16px 32px;
+    }
+    .navbar-brand {
+        padding: 12px 0px;
+    }
+    .collapse {
+        padding: 17px 0px;
+    }
+    .nav-btn {
+        padding: 18px 0px;
+    }
+    .nav-btns-large-scrn {
+        gap: 24px;
+    }
+    .navbar-bg {
+        background-color: aliceblue;
+    }
+    .navbar-nav {
+        gap: 40px;
+    }
+
+    /* navbar end  */
+
+    /* hero section start  */
+    .hero-section {
+        margin-top: 14px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+    .head-line-two {
+        position: relative;
+        right: 30px;
+        bottom: 48px;
+    }
+    .man-img {
+        position: relative;
+        bottom: 40px;
+    }
+    .hero-section-description {
+        max-width: 584px;
+        position: relative;
+        bottom: 74px;
+    }
+    .Sucsessed-clients-part {
+        gap: 42px;
+        padding-bottom: 139px;
+    }
+    .Sucsessed-clients {
+        gap: 24px;
+    }
+
+    /* hero section start  */
+
+    /* buisnesses section start */
+    .businesses-detail-section {
+        margin-top: 59px;
+    }
+    .businesses-head {
+        max-width: 744px;
+    }
+    .businesses-imgs {
+        gap: 30px;
+        padding: 54px 82px;
+    }
+    .box-shadow {
+        box-shadow: 0px 13px 29px 0px #F5C0841A, 0px 53px 53px 0px #F5C08417, 0px 119px 71px 0px #F5C0840D, 0px 212px 85px 0px #F5C08403, 0px 331px 93px 0px #F5C08400;
+        border-radius: 76px;
+    }
+    .business-imgs-spacing-top-btm {
+        margin-top: 18px;
+        margin-bottom: 122px;
+    }
+
+    /* body.dark-mode .box-shadow{
+            background-color: #FFFFFF;
+        } */
+    /* buisnesses section end */
+
+       /* assisting section start  */
+
+    .assisting-section > .container{
+        padding-top: 72px;
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .assist-sec-first-row{
+        margin-top: 68px;
+        gap: 34px;
+    }
+    .financial-services{
+        padding: unset;
+    }
+    .financial-part{
+        padding: 56px 36px 0px 36px;
+    }
+    .investment-info > div{
+        margin: 82px 14px 0px 14px;
+        padding: 10px;
+    }
+    .financial-service-icon{
+        margin-bottom: 38px;
+    }
+    .graph-imgs-margin{
+        margin-top: 72px;
+    }
+    .mt-40{
+        margin-top: 40px;
+    }
+    .mt-26{
+        margin-top: 26px;
+    }
+    .max-width-394{
+        max-width: 394px;
+    }
+    .mastercard-part{
+        margin-top: 34px;
+        padding: 52px 46px 32px 46px !important;
+    }
+    /* assisting section end  */
+
+    /* about section start   */
+    
+    .about-us-section{
+        margin-top: 68px;
+    }
+    .about-us-part{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .about-us-heading{
+        margin-top: 12px;
+    }
+    .about-us-para{
+        margin-top: 36px;
+        margin-bottom: unset;
+        max-width: 430px;
+    }
+    .button-custom{
+        margin-top: 52px;
+    }
+    /* about section end   */
+
+    /* thought section start  */
+    .client-review-section{
+        margin-top: 50px;
+    }
+    .p-61{
+        padding-top: 61px;
+        padding-bottom: 61px;
+    }
+    .comma-1{
+        position: relative;
+        bottom: 29px;
+    }
+    .comma-2{
+        position: relative;
+        top: 220px;
+        right: 14px;
+    }
+    .thought-cards{
+        gap: 16px;
+    }
+    .thought-card{
+        padding: 12px 33px 12px 14px;
+        max-width: 268px;
+        gap: 16px;
+    }
+    .thought-desc{
+        position: relative;
+        bottom: 70px;
+    }
+    
+    /* thought section end  */
+    
+}
+
+
+@media screen and (max-width:768px) {
+
+    :root {
+        /* var for small screens  */
+
+        --heading-font-size-normal-sm-scrn: 30px;
+        --heading-font-weight-normal-sm-scrn: 700;
+        --heading-line-height-sm-scrn: 40px;
+
+        /* --custom-heading-font-size-sm-scrn: 20px; */
+        /* --custom-heading-font-weight-sm-scrn: 500; */
+        /* --custom-heading-line-height-sm-scrn: 32px; */
+
+        --description-font-size-normal-sm-scrn: 14px;
+        --description-font-weight-normal-sm-scrn: 400;
+        --description-line-height-normal-sm-scrn: 20px;
+
+        /* --description-font-sizesm-sm-scrn: 20px; */
+        /* --description-font-weightsm-sm-scrn: 400; */
+        /* --description-line-heightsm-sm-scrn: 32px; */
+
+        /* --description-font-sizesm-lg-scrn: 24px; */
+        /* --description-font-weightsm-lg-scrn: 400; */
+        /* --description-line-heightsm-lg-scrn: 20px; */
+
+        --financial-service-title-font-size-sm-scrn: 20px;
+        --financial-service-title-font-weight-sm-scrn: 700;
+        --financial-service-title-line-height-sm-scrn: 32px;
+
+        /* --sub-heading-font-size-sm-scrn: 10px; */
+        /* --sub-heading-font-weight-sm-scrn: 400; */
+        /* --sub-heading-line-height-sm-scrn: 16px; */
+
+        /* --global-report-text-font-size-sm-scrn: 56px; */
+        /* --global-report-text-font-weight-sm-scrn: 700; */
+        /* --global-report-text-line-height-sm-scrn: 62px; */
+
+        /* --list-text-font-size-sm-scrn: 14px; */
+        /* --list-text-font-weight-sm-scrn: 400; */
+        /* --list-text-line-height-sm-scrn: 20px; */
+
+        --financial-service-description-font-size : 14px;
+        --financial-service-description-line-height: 20px;
+        --financial-service-description-font-weight: 400;
+
+        /* --footer-text-font-size: 14px; */
+        /* --footer-text-font-weight: 400px; */
+        /* --footer-text-line-height: 20px; */
+    }
+    .financial-service-title {
+        color: var(--font-color-black);
+        font-size: var(--financial-service-title-font-size-sm-scrn) !important;
+        font-weight: var(--financial-service-title-font-weight-sm-scrn) !important;
+        line-height: var(--financial-service-title-line-height-sm-scrn) !important;
+    }
+    .financial-service-description{
+        color: var(--font-color-light-black);
+        font-size: var(--financial-service-description-font-size) !important;
+        font-weight: var(--financial-service-description-font-weight) !important;
+        line-height: var(--financial-service-description-line-height) !important;
+    }
+
+    /* headings */
+    .heading-mobile {
+        color: #1C1C1C;
+        font-size: var(--heading-font-size-normal-sm-scrn) !important;
+        font-weight: var(--heading-font-weight-normal-sm-scrn) !important;
+        line-height: var(--heading-line-height-sm-scrn) !important;
+    }
+    .heading-mobile-sm {
+        color: var(--font-color-light-black);
+        font-size: var(--custom-heading-font-size-sm-scrn) !important;
+        font-weight: var(--custom-heading-font-weight-sm-scrn) !important;
+        line-height: var(--custom-heading-line-height-sm-scrn) !important;
+    }
+
+    /* descriptions */
+    .description-mobile {
+        color: var(--font-color-light-black);
+        font-size: var(--description-font-size-normal-sm-scrn) !important;
+        font-weight: var(--description-font-weight-normal-sm-scrn) !important;
+        line-height: var(--description-line-height-normal-sm-scrn) !important;
+    }
+
+
+    /* buttons */
+    .button-mobile {
+        padding: 12px 16px !important;
+        font-size: 12px;
+        font-weight: 400 !important;
+        line-height: 18px;
+    }
+
+
+
+    /* navbar start  */
+    .navbar {
+        padding: 16px;
+    }
+
+    .navbar-toggler {
+        border: unset;
+    }
+
+    /* navbar end  */
+
+    /* hero section start  */
+    .hero-section {
+        background-image: url('../images/BG-MOBILE.png') !important;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-y: -24px;
+    }
+    .head-line-two {
+        position: relative;
+        bottom: 30px;
+        right: 36px;
+    }
+    .girl-img {
+        max-width: 87px;
+        position: relative;
+        bottom: 14px;
+    }
+    .man-img {
+        max-width: 107px;
+        position: relative;
+        bottom: 16px;
+        left: 4px;
+    }
+    .hs-head-text-3 {
+        position: relative;
+        right: 19px;
+    }
+    .hero-sec-span1 {
+        color: rgba(28, 28, 28, 1);
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+    }
+    .hero-sec-span2 {
+        color: rgba(28, 28, 28, 0.6);
+        font-size: 12px !important;
+        font-weight: 400 !important;
+        line-height: 18px !important;
+    }
+    .client-images {
+        max-width: 89px;
+    }
+    .Sucsessed-clients-part {
+        position: relative;
+        gap: 6px;
+        bottom: 30px;
+    }
+    .hero-section-description {
+        position: relative;
+        bottom: 36px;
+        max-width: 270px;
+    }
+    /* hero section end  */
+
+    /* business section start */
+    .businesses-detail-section{
+        margin-top: 30px;
+    }
+    .businesses-detail-section > .container {
+        padding-top: 20px;
+    }
+    .businesses-head {
+        max-width: 206px;
+    }
+    .business-imgs-spacing-top-btm{
+        padding: 26px 0px 69px 0px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .businesses-imgs {
+        animation: scroll 16s linear infinite;
+        gap: 15px;
+    }
+    .business-img {
+        border-radius: 60px;
+        padding: 7px 14px;
+        box-shadow: 0px 2.6514830589294434px 6.186793804168701px 0px #FBB1881A, 0px 10.605932235717773px 10.605932235717773px 0px #FBB18817, 0px 24.747175216674805px 15.025070190429688px 0px #FBB1880D, 0px 43.30755615234375px 17.67655372619629px 0px #FBB18803, 0px 68.05473327636719px 18.560380935668945px 0px #FBB18800;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    } 
+    /* end */
+
+    /* assisting section start  */
+    .assisting-section{
+        margin-top: 30px;
+    }
+    .assist-sec-head {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    .financial-services{
+        padding: unset;
+    }
+    .financial-part{
+        padding: 32px 24px 0px 24px;
+    }
+    .financial-service-icon{
+        max-width: 28px;
+        max-height: 28px;
+        margin-bottom: 26px;
+    }
+    .financial-service-description{
+        margin-top: 8px;
+        margin-bottom: unset;
+    }
+    .investment-info{
+        margin-top: 56px;
+    }
+    .investment-info > div{
+        padding: 14px 14px 1px 14px;
+    }
+    .assist-sec-first-row{
+        margin: 61px 26px 0px 26px;
+    }
+    .mt-24{
+        margin-top: 24px;
+    }
+    .investment-info-para{
+        font-size: 12px;
+    }
+    .graph-imgs-margin{
+        margin-top: 56px;
+    }
+    .max-width-160-mob{
+        max-width: 160px;
+    }
+    .pb-24{
+        padding-bottom: 24px;
+    }
+    .mastercard-part{
+        margin: 24px 26px 0px 26px;
+    }
+    /* assisting section end  */
+
+    /* about us section start  */
+    .about-us-section{
+        margin-top: 54px;
+    }
+    .about-us-part{
+        margin: 0px 26px;
+    }
+    .about-us-content{
+        margin-top: 54px;
+        padding: unset;
+    }
+    .about-us-heading{
+        margin-top: 4px;
+    }
+    .about-us-para{
+        margin-top: 22px;
+        margin-bottom: unset;
+    }
+    .button-custom{
+        margin-top: 32px;
+        margin-bottom: 33px;
+    }
+    /* about us section end  */
+
+     /* thoughts section start */
+     .client-review-section{
+        margin-top: 28px;
+    }
+    .thought-card > img{
+        max-width: 32px;
+        max-height: 32px;
+    }
+    .thought-card div span{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 16px;
+    } 
+    .thought-cards{
+        flex-direction: row !important;
+        overflow: scroll;
+        gap: 8px;
+    }
+    .thought-card{
+        padding: 6px 16px 6px 6px;
+        gap: 8px;
+        min-width: 150px;
+    }
+    .thought-desc{
+        font-weight: 700;
+        padding: 36px 26px 35px 26px;
+        position: relative;
+        bottom: 30px;
+        max-width: 320px;
+    }
+    .commas{
+        padding: 0px 26px 0px 26px;
+    }
+    .comma-1{
+        max-width: 42px;
+        max-height: 33px;
+        position: relative;
+        top: 28px;
+        right: 8px;
+    }
+    .comma-2{
+        max-width: 42px;
+        max-height: 33px;
+        position: relative;
+        top: 266px;
+        right: 54px;
+    }
+    .content{
+        margin-top: 20px;
+    }
+    /* thoughts section end */
+}
