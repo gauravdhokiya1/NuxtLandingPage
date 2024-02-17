@@ -36,3 +36,119 @@
     color: #1c1c1c;
     text-decoration: none;
 }
+.title{
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-500);
+}
+.head{
+    color: var(--font-color-black);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-24);
+}
+.percentage{
+    color: var(--font-color-red);
+    font-weight: var(--font-weight-500);
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.desc{
+    color: var(--font-color-light-black);
+    font-weight: var(--font-weight-500);
+}
+.testimonial-card{
+    cursor: pointer;
+}
+
+/* dark mode  */
+.dark-mode {
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+}
+.dark-mode .navbar-bg{
+    background-color: #1c1c1c;
+}
+.dark-mode .nav-link{
+    color: #FFFFFF;
+}
+.dark-mode .navbar-brand{
+    color: #FFFFFF;
+}
+.dark-mode .nav-btn{
+    color: #FFFFFF;
+}
+.dark-mode .heading{
+    color: #FFFFFF;
+}
+.dark-mode .heading-lg{
+    color: #FFFFFF;
+}
+.dark-mode .heading-mobile{
+    color: #FFFFFF;
+}
+.dark-mode .heading-mobile-sm{
+    color: #FFFFFF;
+}
+.dark-mode .hero-sec-span1{
+    color: #FFFFFF;
+}
+.dark-mode .hero-sec-span2{
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .description{
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .custom-description{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode .financial-services{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.dark-mode .financial-service-title{
+    color: #FFFFFF;
+}
+.dark-mode .financial-service-description{
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .list-text{
+    color: #FFFFFF;
+}
+.dark-mode .bg-color{
+    background: rgba(255, 255, 255, 0.05);
+}
+.dark-mode .footer{
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .color-mid-black{
+    color: #FFFFFF;
+}
+.dark-mode .copyright-text{
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .footer-logo{
+    color: #FFFFFF;
+    gap: 10px;
+    text-decoration: none;
+}
+.dark-mode .input{
+    background: linear-gradient(0deg, #BFBFC5, #BFBFC5),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(191, 191, 197, 1);
+}
+.dark-mode .name{
+    color: #FFFFFF;
+}
+.dark-mode .role{
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .background-gray{
+    background: rgba(255, 255, 255, 0.1);
+}
+.dark-mode .navbar-toggler-icon{
+    background-image: url("./images/menu.png");
+}   
+.dark-mode .business-img{
+    background-color: #FFFFFF;
+}

@@ -16,8 +16,8 @@
             <ul class="navbar-nav">
                 <!-- Dropdown menu -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         All Pages
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,28 +37,41 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
-            <div class="d-flex nav-btns-mobile" v-if="scrnwidth <= 768">
+            <div class="d-flex nav-btns-mobile">
                 <button class="btn nav-btn" type="button">Sign In</button>
-                <button class="btn button" type="button">Get This Template</button>
+                <PrimaryButton buttontext="Get This Template" />
                 <div class="form-check form-switch d-flex flex-column justify-content-center">
                     <input class="form-check-input darkModeToggle" type="checkbox">
                 </div>
             </div>
         </div>
         <!-- Buttons -->
-        <div class="d-flex nav-btns-large-scrn" v-if="scrnwidth > 769">
+        <div class="d-flex nav-btns-large-scrn">
             <div class="form-check form-switch d-flex flex-column justify-content-center">
-                <input class="form-check-input darkModeToggle" type="checkbox">
+                <input class="form-check-input darkModeToggle" type="checkbox" v-model="darkModeEnabled">
             </div>
             <button class="btn nav-btn" type="button">Sign In</button>
-            <button class="btn button" type="button">Get This Template</button>
+            <PrimaryButton buttontext="Get This Template" />
         </div>
     </nav>
-    <slot/>
+    <slot />
 </template>
 <script setup>
+import { useTestStore } from '~/store/user'
+
+
 const scrnwidth = ref()
 onMounted(() => {
     scrnwidth.value = window.innerWidth
 })
+
+const useStore = useTestStore()
+const darkModeEnabled = computed({
+    get() {
+        return useStore.darkModeEnabled; // Get state from store
+    },
+    set(value) {
+        useStore.updateDarkMode(value); // Update state in store
+    }
+});
 </script>

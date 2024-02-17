@@ -4,8 +4,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
-                        <!-- display on lg scrn only -->
-                        <div v-if="screenwidth >= 769">
+                        <!-- display on large scrn only -->
+                        <div class="Hero-Sec-Heading-for-large">
                             <div class="d-flex align-items-center">
                                 <h1 class="heading-lg">Intelligent</h1>
                                 <img src="../assets/images/girl.svg" alt="girl-img">
@@ -16,7 +16,8 @@
                                 <h1 class="heading-lg">Savvy Businesses</h1>
                             </div>
                         </div>
-                        <div v-if="screenwidth <= 768">
+                        <!-- display on small scrn only  -->
+                        <div class="Hero-Sec-Heading-for-mobile">
                             <div class="heading-mobile">Intelligent
                                 <img src="../assets/images/girl.svg" class="girl-img" alt="girl-img">
                             </div>
@@ -32,7 +33,7 @@
                             FramerBite provides the essential elements for crafting a top-tier website for your SaaS
                             platform.</p>
                         <!-- display on large screen only  -->
-                        <div class="d-flex Sucsessed-clients-part" v-if="screenwidth >= 769">
+                        <div class="d-flex Sucsessed-clients-part Sucssesed-clients-part-for-large">
                             <div>
                                 <PrimaryButton buttontext="Get Started Now" />
                             </div>
@@ -46,7 +47,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column text-center Sucsessed-clients-part" v-if="screenwidth <= 768">
+                        <!-- display on small scrn only  -->
+                        <div
+                            class="d-flex flex-column text-center Sucsessed-clients-part Sucssesed-clients-part-for-mobile">
                             <div>
                                 <img src="../assets/images/client-images.svg" class="client-images" alt="client images">
                             </div>
@@ -55,7 +58,8 @@
                                 <span class="hero-sec-span2">Sucsess clients</span>
                             </div>
                             <div>
-                                <button class="btn button button-mobile">Get Started Now</button>
+                                <PrimaryButton buttontext="Get Started Now" class="button-mobile" />
+
                             </div>
                         </div>
                     </div>
@@ -80,13 +84,13 @@
                 </div>
             </div>
         </section>
-        <section class="assisting-section">
+        <section class="financial-services-section">
             <div class="container">
-                <h1 class="heading heading-mobile assist-sec-head">
+                <h1 class="heading heading-mobile financial-srvc-head">
                     We're here to assist you in creating, managing</h1>
                 <div class="row assist-sec-first-row">
                     <div class="col-md-5 financial-services">
-                        <div class="financial-part">
+                        <!-- <div class="financial-part">
                             <div class="d-flex justify-content-between">
                                 <h3 class="financial-service-title">Investment Fund</h3>
                                 <img src="../assets/images/invest-fund-icon.svg" alt="icon" class="financial-service-icon">
@@ -104,10 +108,17 @@
                                         than this month in comparision to March 2020.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
+                        <FinancialPart HeadingText="Investment Fund" IconSrc="/_nuxt/assets/images/invest-fund-icon.svg"
+                            FSDdesc="FramerBite delivers the essential components to build a
+                                polished and professional website for your SaaS business."
+                            InvestInfoClass="investment-info" TitleClass="title" TitleText="Entertainment"
+                            HeadText="R2500.00" HeadingClass="head" description="desc"
+                            DescriptionText="You have spent more than this month in comparision to March 2020."
+                            percentage="percentage" PercentText="+ 9.2%" />
                     </div>
                     <div class="col-md mt-24 financial-services">
-                        <div class="financial-part">
+                        <!-- <div class="financial-part">
                             <div class="d-flex justify-content-between">
                                 <h3 class="financial-service-title">Retirement Plan</h3>
                                 <img src="../assets/images/retire-plan-icon.svg" alt="icon" class="financial-service-icon">
@@ -120,7 +131,15 @@
                                 <img src="../assets/images/graph-img-2.svg" alt="graph-img" class="hide-revenue-graph-onsm"
                                     :class="{ 'd-none': screenwidth <= 768 }">
                             </div>
-                        </div>
+                        </div> -->
+                        <FinancialPart HeadingText="Investment Fund" IconSrc="/_nuxt/assets/images/invest-fund-icon.svg"
+                            FSDdesc="FramerBite offers the essential building blocks for
+                                developing a sophisticated website for your SaaS, a well-established fact recognized by
+                                numerous desktop publishing packages and web page editors."
+                            GraphImgPart="d-flex justify-content-evenly graph-imgs-margin"
+                            GraphImg1Src="/_nuxt/assets/images/graph-img-1.svg"
+                            GraphImg2Src="/_nuxt/assets/images/graph-img-2.svg" GraphImg1SrcClass="img-fluid"
+                            GraphImg2SrcClass="hide-revenue-graph-onsm" />
                     </div>
                 </div>
                 <div class="row mastercard-part financial-services">
@@ -159,7 +178,7 @@
                             build a
                             professional-grade website for your SaaS, a fact well-known to readers familiar with the
                             industry.</p>
-                        <button class="btn button-custom button-mobile">More About Us</button>
+                        <PrimaryButton buttontext="More About us" class="button-custom button-mobile" />
                     </div>
                     <div class="col-md-6 d-flex">
                         <img src="../assets/images/about-us-img.svg" alt="about-us-img" class="img-fluid">
@@ -170,26 +189,29 @@
         <section class="testimonial-section">
             <div class="container">
                 <div class="row p-61">
-                    <div class="col-md-4 d-flex flex-column gap-20 testimonial-cards">
-                        <div class="d-flex align-items-center testimonial-card active background-gray " data-tab="founder">
-                            <img src="../assets/images/FOUNDER.svg" alt="FOUNDER">
-                            <div class="d-flex flex-column">
-                                <span class="color-black name">Catherine Bennett</span>
-                                <span class="color-light-black role">Founder, Creative</span>
+                    <div class="col-md-4">
+                        <div class=" d-flex flex-column gap-20 testimonial-cards">
+                            <div class="d-flex align-items-center testimonial-card active background-gray "
+                                data-tab="founder">
+                                <img src="../assets/images/FOUNDER.svg" alt="FOUNDER">
+                                <div class="d-flex flex-column">
+                                    <span class="color-black name">Catherine Bennett</span>
+                                    <span class="color-light-black role">Founder, Creative</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center testimonial-card" data-tab="designer">
-                            <img src="../assets/images/DESIGNER.svg" alt="DESIGNER">
-                            <div class="d-flex flex-column">
-                                <span class="color-black name">Tony Danza</span>
-                                <span class="color-light-black role">Designer, Creative</span>
+                            <div class="d-flex align-items-center testimonial-card" data-tab="designer">
+                                <img src="../assets/images/DESIGNER.svg" alt="DESIGNER">
+                                <div class="d-flex flex-column">
+                                    <span class="color-black name">Tony Danza</span>
+                                    <span class="color-light-black role">Designer, Creative</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center testimonial-card" data-tab="aigc">
-                            <img src="../assets/images/AICG.svg" alt="AICG">
-                            <div class="d-flex flex-column">
-                                <span class="color-black name">Mike Torello</span>
-                                <span class="color-light-black role">AIGC, Creative</span>
+                            <div class="d-flex align-items-center testimonial-card" data-tab="aigc">
+                                <img src="../assets/images/AICG.svg" alt="AICG">
+                                <div class="d-flex flex-column">
+                                    <span class="color-black name">Mike Torello</span>
+                                    <span class="color-light-black role">AIGC, Creative</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,78 +225,42 @@
                             offered crucial perspectives on our business metrics, <span class="color-light-black">enabling
                                 us to implement informed</span></h1>
                     </div>
-                    <!-- <div class="col-md-8 review" id="designer">
+                    <div class="col-md-8 review" id="designer">
                         <div style="height: 70px;"></div>
-                        <h1 class="heading-sm color-black testimonial-desc headingsm-sm-scrn">Lorem ipsum dolor sit amet
+                        <h1 class="heading-sm color-black testimonial-desc heading-mobile-sm">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Debitis recusandae minima quae qui soluta quas voluptatibus,
                             nemo earum temporibus ipsa odit quaerat. Id laboriosam ducimus praesentium magnam? Enim,
                             optio rerum.</h1>
-                    </div> -->
-                    <!-- <div class="col-md-8 review" id="aigc">
+                    </div>
+                    <div class="col-md-8 review" id="aigc">
                         <div style="height: 70px;"></div>
-                        <h1 class="heading-sm color-black testimonial-desc headingsm-sm-scrn">Neque possimus labore repellat
+                        <h1 class="heading-sm color-black testimonial-desc heading-mobile-sm">Neque possimus labore repellat
                             maxime quam nulla reiciendis itaque nisi ullam distinctio! Ea dolorum enim eveniet
                             laudantium?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident corrupti
                             reprehenderit asperiores? Corrupti, cum fugit!</h1>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>
         <section class="statistics-section">
             <div class="container">
                 <div class="row p-48 gap-63 gap-66-mob">
-                    <!-- <div class="col-md d-flex flex-column align-items-center p-unset">
-                        <span class="statistics-sec-head-text">300+</span>
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="./images/partner-icon.svg">
-                            <span class="statistics-sec-text">Partner with us</span>
-                        </div>
-                    </div> -->
-                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center p-unset" 
-                    StatisticCountText="300+"
-                    ImgSource="../assets/images/partner-icon.svg"
-                    StatisticText="Partner with us"
-                    />
-                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
-                        <span class="statistics-sec-head-text">$3.2b+</span>
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="./images/money-icon.svg">
-                            <span class="statistics-sec-text">Cumulative trending</span>
-                        </div>
-                    </div> -->
-                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
-                    StatisticCountText="$3.2b+"
-                    ImgSource="../assets/images/money-icon.svg"
-                    StatisticText="Cumulative trending"
-                    />
-                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
-                        <span class="statistics-sec-head-text">860k</span>
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="./images/succes-prj-icon.svg">
-                            <span class="statistics-sec-text">Successful projects</span>
-                        </div>
-                    </div> -->
-                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
-                    StatisticCountText="860k"
-                    ImgSource="../assets/images/succes-prj-icon.svg"
-                    StatisticText="Successful projects"
-                    />
-                    <!-- <div class="col-md d-flex flex-column align-items-center m-top-on-sm p-unset">
-                        <span class="statistics-sec-head-text">1.6%</span>
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="../assets/images/intrest-rate-icon.svg">
-                            <span>Low interest rate</span>
-                        </div>
-                    </div> -->
-                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset" 
-                    StatisticCountText="1.6%"
-                    ImgSource="../assets/images/intrest-rate-icon.svg"
-                    StatisticText="Low interest rate"
-                    />
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center p-unset"
+                        StatisticCountText="300+" ImgSource="/_nuxt/assets/images/partner-icon.svg"
+                        StatisticText="Partner with us" />
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset"
+                        StatisticCountText="$3.2b+" ImgSource="/_nuxt/assets/images/money-icon.svg"
+                        StatisticText="Cumulative trending" />
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset"
+                        StatisticCountText="860k" ImgSource="/_nuxt/assets/images/succes-prj-icon.svg"
+                        StatisticText="Successful projects" />
+                    <Statistics StatisticPartClass="col-md d-flex flex-column align-items-center m-top-on-sm p-unset"
+                        StatisticCountText="1.6%" ImgSource="/_nuxt/assets/images/intrest-rate-icon.svg"
+                        StatisticText="Low interest rate" />
                 </div>
             </div>
         </section>
-        <section class="xb-innovation-section">
+        <!-- <section class="xb-innovation-section">
             <div class="container">
                 <div class="row d-flex align-items-center p-48 pt-27-mob pb-unset-mob">
                     <div class="col-md">
@@ -299,12 +285,21 @@
                                 <span class="list-text">Secure Transaction Platform</span>
                             </div>
                         </div>
-                        <button class="btn button button-mobile more-about-us-btn">More About Us</button>
+                        <PrimaryButton buttontext="More About Us" class="button-mobile more-about-us-btn" />
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="bg-color download-our-app-section">
+        </section> -->
+        <ImageAndContent SectionClass="xb-innovation-section"
+            RowClasses="d-flex align-items-center p-48 pt-27-mob pb-unset-mob" Colmd_first="col-md"
+            Colmd_first_img="/_nuxt/assets/images/xb-inovation.svg" Colmd_second="col-md xb-inno-sec-content"
+            HeadingText="Pave your path to triumph with XB innovation."
+            DescriptionClasses="description description-mobile xb-inno-sec-para max-width"
+            DescriptionText="X equips you with the essential tools to craft a genuinely professional SaaS website."
+            lists="d-flex flex-column lists pt-64" list_item_imgSrc="/_nuxt/assets/images/right.svg"
+            ListItem1Text="Effortless Browsing" ListItem2Text="Secure Top 5% Industry Experts for Your Project"
+            ListItem3Text="Secure Transaction Platform" />
+        <!-- <section class="bg-color download-our-app-section">
             <div class="container">
                 <div class="row p-95">
                     <div class="col-md-6 d-flex align-items-end iphone-img">
@@ -336,7 +331,17 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <ImageAndContent SectionClass="bg-color download-our-app-section" RowClasses="p-95"
+            Colmd_first="col-md-6 d-flex align-items-end iphone-img" Colmd_first_img="/_nuxt/assets/images/iphone.svg"
+            Colmd_second="col-md-6 download-our-app-content" HeadingText="Download our mobile app"
+            DescriptionClasses="description description-mobile pt-32 max-width pt-32-mob"
+            DescriptionText="X provides you with the essential toolkit to develop a genuinely polished website"
+            lists="d-flex flex-column pt-32 lists" list_item_imgSrc="/_nuxt/assets/images/right.svg"
+            ListItem1Text="Effortless Browsing" ListItem2Text="Secure Top 5% Industry Experts for Your Project"
+            ListItem3Text="WeChat & live chat" StoreImgPart="d-flex g-20 p-imgs pt-34-mob justify-content-center"
+            AppStore="/_nuxt/assets/images/download-on-app-store.svg"
+            PlayStore="/_nuxt/assets/images/download-on-playstore.svg" />
         <section class="accelerate-business-growth-section">
             <div class="d-flex flex-column align-items-center p-abgs">
                 <h1 class="heading heading-mobile">Accelerate Your Business Growth</h1>
@@ -405,5 +410,37 @@ definePageMeta({
 const screenwidth = ref()
 onMounted(() => {
     screenwidth.value = window.innerWidth
+
+    // navbar behaviour change
+    window.addEventListener("scroll", function () {
+        let nav = document.querySelector("nav");
+        if (window.scrollY > 1) {
+            nav.classList.add("navbar-bg");
+        } else {
+            nav.classList.remove("navbar-bg");
+        }
+    });
+
+    // For Testimonials Tabs 
+    document.querySelectorAll('.review').forEach(function (element) {
+        element.classList.add('d-none');
+    });
+    document.getElementById('founder').classList.remove('d-none');
+
+    document.querySelectorAll('.testimonial-card').forEach(function (element) {
+        element.addEventListener('click', function () {
+            document.querySelectorAll('.testimonial-card').forEach(function (card) {
+                card.classList.remove('active');
+                card.classList.remove('background-gray');
+            });
+            document.querySelectorAll('.review').forEach(function (review) {
+                review.classList.add('d-none');
+            });
+            var tab = this.getAttribute('data-tab');
+            this.classList.add('active');
+            this.classList.add('background-gray');
+            document.getElementById(tab).classList.remove('d-none');
+        });
+    });
 })
 </script>
